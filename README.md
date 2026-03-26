@@ -1,4 +1,4 @@
-# Audio-Understanding-Test-Prompts
+# Audio-Understanding-Tests
 
 A collection of test prompts for evaluating audio understanding capabilities of multimodal AI models, paired with a voice sample and example outputs.
 

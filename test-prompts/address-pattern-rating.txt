@@ -1,0 +1,14 @@
+Rate this speaker's speech delivery and address pattern on a detailed rubric. Score each dimension from 1-10 with specific evidence:
+
+1. Clarity of articulation
+2. Pace and rhythm consistency
+3. Volume control and projection
+4. Filler word frequency (fewer = higher score)
+5. Sentence completion rate (how often do they finish thoughts vs trail off or restart?)
+6. Logical flow and coherence
+7. Breathing technique (audible gasps vs controlled breath support)
+8. Emphasis and stress placement
+9. Listener engagement quality (would an audience stay attentive?)
+10. Overall professionalism of delivery
+
+Provide an overall score, identify the speaker's biggest strength and biggest weakness, and suggest one concrete improvement that would raise the overall score the most.

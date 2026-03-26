@@ -1,0 +1,1 @@
+Estimate the speaker's height in centimeters from their vocal characteristics. Consider vocal tract length indicators such as formant spacing, fundamental frequency, and resonance patterns. Provide your best estimate with a confidence range, and explain the acoustic evidence that supports your estimate. How reliable do you consider voice-based height estimation to be?

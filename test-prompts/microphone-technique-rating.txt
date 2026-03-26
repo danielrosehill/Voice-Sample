@@ -1,0 +1,14 @@
+Rate this speaker's microphone technique and recording skills based on what you can hear. Score each dimension from 1-10 with specific evidence:
+
+1. Mic distance consistency (staying at a steady distance vs drifting)
+2. Plosive management (p-pops and b-pops)
+3. Sibilance control
+4. Handling noise (bumps, taps, rustling against the mic)
+5. Room selection and acoustic environment
+6. Mouth noise management (clicks, lip smacks, swallowing)
+7. Breath noise management (audible inhales near the mic)
+8. Volume consistency (maintaining even levels vs sudden jumps)
+9. Head movement discipline (staying on-axis vs turning away)
+10. Overall recording hygiene
+
+Provide an overall score, identify what they're doing well and what most needs improvement. Give 3 specific, practical tips this speaker could implement immediately to improve their recording quality.

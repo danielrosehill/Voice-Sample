@@ -1,0 +1,1 @@
+Analyse the speaker's voice for markers associated with smoking. Consider breathiness, vocal roughness, reduced pitch range, and any signs of chronic laryngeal irritation. Is this speaker likely a current smoker, former smoker, or non-smoker? Provide specific acoustic evidence for your assessment and rate your confidence.

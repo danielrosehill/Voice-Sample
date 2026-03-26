@@ -1,0 +1,1 @@
+Classify whether this recording was made indoors or outdoors. Provide detailed acoustic reasoning: consider reverberation patterns, background noise characteristics, wind noise presence or absence, and any environmental cues. If indoors, what type of building? If there are mixed cues, explain the contradictions.

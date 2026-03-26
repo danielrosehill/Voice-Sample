@@ -149,10 +149,10 @@
       "category": "Environment",
       "description": "Estimate the room size and acoustic properties from reverberation characteristics",
       "author": "Claude (Opus 4.6)",
-      "status": "suggested",
-      "run_status": null,
-      "input": null,
-      "output": null
+      "status": "implemented",
+      "run_status": "complete",
+      "input": "test-prompts/room-acoustics-estimation.txt",
+      "output": "outputs/room-acoustics-estimation.md"
     },
     {
       "id": 15,
@@ -160,10 +160,10 @@
       "category": "Environment",
       "description": "Classify all background sounds (HVAC, traffic, keyboard, etc.) with confidence scores",
       "author": "Claude (Opus 4.6)",
-      "status": "suggested",
-      "run_status": null,
-      "input": null,
-      "output": null
+      "status": "implemented",
+      "run_status": "complete",
+      "input": "test-prompts/background-noise-classification.txt",
+      "output": "outputs/background-noise-classification.md"
     },
     {
       "id": 16,
@@ -182,10 +182,10 @@
       "category": "Audio Engineering",
       "description": "Infer the likely microphone type and placement from audio characteristics",
       "author": "Claude (Opus 4.6)",
-      "status": "suggested",
-      "run_status": null,
-      "input": null,
-      "output": null
+      "status": "implemented",
+      "run_status": "complete",
+      "input": "test-prompts/microphone-type-guess.txt",
+      "output": "outputs/microphone-type-guess.md"
     },
     {
       "id": 18,
@@ -545,10 +545,10 @@
       "category": "Emotion & Sentiment",
       "description": "Map emotional state to valence-arousal coordinates over time",
       "author": "Claude (Opus 4.6)",
-      "status": "suggested",
-      "run_status": null,
-      "input": null,
-      "output": null
+      "status": "implemented",
+      "run_status": "complete",
+      "input": "test-prompts/valence-arousal-mapping.txt",
+      "output": "outputs/valence-arousal-mapping.md"
     },
     {
       "id": 51,
@@ -578,10 +578,10 @@
       "category": "Speaker Demographics",
       "description": "Estimate speaker height from vocal tract length indicators",
       "author": "Claude (Opus 4.6)",
-      "status": "suggested",
-      "run_status": null,
-      "input": null,
-      "output": null
+      "status": "implemented",
+      "run_status": "complete",
+      "input": "test-prompts/speaker-height-estimation.txt",
+      "output": "outputs/speaker-height-estimation.md"
     },
     {
       "id": 54,
@@ -589,10 +589,10 @@
       "category": "Speaker Demographics",
       "description": "Infer whether the speaker is likely a smoker from voice quality markers",
       "author": "Claude (Opus 4.6)",
-      "status": "suggested",
-      "run_status": null,
-      "input": null,
-      "output": null
+      "status": "implemented",
+      "run_status": "complete",
+      "input": "test-prompts/smoking-status-inference.txt",
+      "output": "outputs/smoking-status-inference.md"
     },
     {
       "id": 55,
@@ -611,10 +611,10 @@
       "category": "Speaker Demographics",
       "description": "Estimate the speaker's education level from vocabulary and syntactic complexity",
       "author": "Claude (Opus 4.6)",
-      "status": "suggested",
-      "run_status": null,
-      "input": null,
-      "output": null
+      "status": "implemented",
+      "run_status": "complete",
+      "input": "test-prompts/education-level-estimation.txt",
+      "output": "outputs/education-level-estimation.md"
     },
     {
       "id": 57,
@@ -633,10 +633,10 @@
       "category": "Health & Wellness",
       "description": "Assess likely vocal hydration level from voice quality indicators",
       "author": "Claude (Opus 4.6)",
-      "status": "suggested",
-      "run_status": null,
-      "input": null,
-      "output": null
+      "status": "implemented",
+      "run_status": "complete",
+      "input": "test-prompts/hydration-assessment.txt",
+      "output": "outputs/hydration-assessment.md"
     },
     {
       "id": 59,
@@ -1150,10 +1150,10 @@
       "category": "Environment",
       "description": "Describe the entire audio scene as a narrative (voices and environment and events)",
       "author": "Claude (Opus 4.6)",
-      "status": "suggested",
-      "run_status": null,
-      "input": null,
-      "output": null
+      "status": "implemented",
+      "run_status": "complete",
+      "input": "test-prompts/audio-scene-description.txt",
+      "output": "outputs/audio-scene-description.md"
     },
     {
       "id": 106,
@@ -1161,10 +1161,10 @@
       "category": "Environment",
       "description": "Classify whether the recording is indoors or outdoors with reasoning",
       "author": "Claude (Opus 4.6)",
-      "status": "suggested",
-      "run_status": null,
-      "input": null,
-      "output": null
+      "status": "implemented",
+      "run_status": "complete",
+      "input": "test-prompts/indoor-outdoor-classification.txt",
+      "output": "outputs/indoor-outdoor-classification.md"
     },
     {
       "id": 107,
@@ -1183,10 +1183,10 @@
       "category": "Environment",
       "description": "Infer weather conditions from environmental audio (rain and wind and thunder)",
       "author": "Claude (Opus 4.6)",
-      "status": "suggested",
-      "run_status": null,
-      "input": null,
-      "output": null
+      "status": "implemented",
+      "run_status": "complete",
+      "input": "test-prompts/weather-inference.txt",
+      "output": "outputs/weather-inference.md"
     },
     {
       "id": 109,
@@ -1194,10 +1194,10 @@
       "category": "Forensic Audio",
       "description": "Assess whether the audio shows signs of synthetic generation or manipulation",
       "author": "Claude (Opus 4.6)",
-      "status": "suggested",
-      "run_status": null,
-      "input": null,
-      "output": null
+      "status": "implemented",
+      "run_status": "complete",
+      "input": "test-prompts/deepfake-detection.txt",
+      "output": "outputs/deepfake-detection.md"
     },
     {
       "id": 110,
@@ -1418,6 +1418,94 @@
       "run_status": "complete",
       "input": "test-prompts/emotional-peaks-timestamps.txt",
       "output": "outputs/emotional-peaks-timestamps.md"
+    },
+    {
+      "id": 130,
+      "name": "geographic-location-inference",
+      "category": "Environment",
+      "description": "Infer geographic location purely from environmental audio cues, ignoring speech content",
+      "author": "Daniel Rosehill",
+      "status": "implemented",
+      "run_status": "complete",
+      "input": "test-prompts/geographic-location-inference.txt",
+      "output": "outputs/geographic-location-inference.md"
+    },
+    {
+      "name": "easiest-english-accent",
+      "category": "Speaker Analysis",
+      "description": "Which English accent would be easiest for this speaker to convincingly adopt",
+      "id": 131,
+      "author": "Daniel Rosehill",
+      "status": "implemented",
+      "run_status": "complete",
+      "input": "test-prompts/easiest-english-accent.txt",
+      "output": "outputs/easiest-english-accent.md"
+    },
+    {
+      "name": "ideal-microphone-recommendation",
+      "category": "Audio Engineering",
+      "description": "Recommend specific microphone models matched to this voice's spectral characteristics",
+      "id": 132,
+      "author": "Daniel Rosehill",
+      "status": "implemented",
+      "run_status": "complete",
+      "input": "test-prompts/ideal-microphone-recommendation.txt",
+      "output": "outputs/ideal-microphone-recommendation.md"
+    },
+    {
+      "name": "best-voice-headset",
+      "category": "Audio Engineering",
+      "description": "Recommend wearable headset microphones optimised for this speaker's voice profile",
+      "id": 133,
+      "author": "Daniel Rosehill",
+      "status": "implemented",
+      "run_status": "complete",
+      "input": "test-prompts/best-voice-headset.txt",
+      "output": "outputs/best-voice-headset.md"
+    },
+    {
+      "name": "speech-recognition-model-ranking",
+      "category": "Speech Metrics",
+      "description": "Rank speech recognition engines by expected accuracy for this specific speaker",
+      "id": 134,
+      "author": "Daniel Rosehill",
+      "status": "implemented",
+      "run_status": "complete",
+      "input": "test-prompts/speech-recognition-model-ranking.txt",
+      "output": "outputs/speech-recognition-model-ranking.md"
+    },
+    {
+      "name": "dictation-coaching",
+      "category": "Speech Metrics",
+      "description": "Coach the speaker on improving speech habits for higher dictation/STT accuracy",
+      "id": 135,
+      "author": "Daniel Rosehill",
+      "status": "implemented",
+      "run_status": "complete",
+      "input": "test-prompts/dictation-coaching.txt",
+      "output": "outputs/dictation-coaching.md"
+    },
+    {
+      "name": "address-pattern-rating",
+      "category": "Speaker Analysis",
+      "description": "Rate the speaker delivery and address pattern on a 10-dimension rubric",
+      "id": 136,
+      "author": "Daniel Rosehill",
+      "status": "implemented",
+      "run_status": "complete",
+      "input": "test-prompts/address-pattern-rating.txt",
+      "output": "outputs/address-pattern-rating.md"
+    },
+    {
+      "name": "microphone-technique-rating",
+      "category": "Audio Engineering",
+      "description": "Rate the speaker microphone technique and recording hygiene on a 10-dimension rubric",
+      "id": 137,
+      "author": "Daniel Rosehill",
+      "status": "implemented",
+      "run_status": "complete",
+      "input": "test-prompts/microphone-technique-rating.txt",
+      "output": "outputs/microphone-technique-rating.md"
     }
   ]
 }

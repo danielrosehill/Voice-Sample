@@ -1,0 +1,1 @@
+Assess the speaker's likely vocal hydration level from voice quality indicators. Listen for signs of dehydration such as increased vocal effort, reduced mucosal wave, throat clearing, mouth clicks from dryness, or rough onset of phonation. Is the speaker well-hydrated, mildly dehydrated, or showing signs of significant vocal dryness? Provide acoustic evidence.

@@ -1,0 +1,1 @@
+Map the speaker's emotional state throughout the recording using the valence-arousal model. For each major segment, plot the approximate position on a valence (negative to positive) and arousal (low to high energy) grid. Present this as a timestamped journey through emotional space, noting the key transitions and what triggered them. Include a summary visualization description.

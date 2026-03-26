@@ -1,32 +1,100 @@
-# Audio-Understanding-Tests
+# Audio Understanding Model Evaluation
 
-A collection of test prompts for evaluating audio understanding capabilities of multimodal AI models, paired with a voice sample and example outputs.
+A systematic evaluation of audio multimodal model capabilities using structured test prompts, a natural voice recording, and programmatic output generation.
 
-## Contents
+## Experiment
+
+| Parameter | Value |
+|-----------|-------|
+| **Model under test** | `gemini-3.1-flash-lite-preview` |
+| **Audio sample** | FLAC mono 24kHz, 20m 54s |
+| **Transcript baseline** | AssemblyAI (97.4% confidence) |
+| **Prompts executed** | 49 across 13 categories |
+| **Date** | 26 March 2026 |
+| **Author** | Daniel Rosehill |
+| **Assisted by** | Claude (Opus 4.6) |
+
+The audio sample is an informal, unscripted 21-minute voice recording by a male Irish-accented speaker in his late 30s, recorded on a smartphone in a residential room in Jerusalem. Topics range from personal experience during the Iran–Israel conflict to AI podcast production, voice cloning experiments, and EQ analysis.
+
+## Conclusions (Claude Opus 4.6, 26 March 2026)
+
+**Model evaluated:** Google Gemini 3.1 Flash Lite (Preview)
+
+### Strong
+
+- **Speaker identification & accent analysis** — Correctly identified Irish male, late 30s, with detailed phonetic observations across multiple prompts
+- **Content comprehension** — Accurately extracted topics, named entities, geographic references, and technical terminology from unscripted speech
+- **Emotional tone & deception analysis** — Appropriately characterised the speech as casual and non-deceptive, noting fatigue consistent with the speaker's own description
+- **Audio engineering** — Technically sound EQ recommendations, plausible microphone type and room acoustics inferences
+- **Ethical responsibility** — Consistently included appropriate disclaimers on sensitive prompts (mental health, drug influence, deception)
+
+### Mixed
+
+- **Quantitative metrics** — WPM analysis produced structured output but interval breakdowns appear estimated rather than measured
+- **Speaker height estimation** — Reasonable estimate with good caveats, but cited acoustic evidence reads as generic rather than specific to this recording
+- **Adversarial prompts** — True age detection relied on the speaker's own statements rather than independent vocal analysis
+
+### Weak
+
+- **Acoustic signal analysis** — Tasks requiring spectral or temporal measurement (valence-arousal mapping, emotional peaks with timestamps) produced plausible narratives without demonstrable acoustic grounding
+- **Weather inference & voice matching** — Minimal outputs that did not attempt conditional reasoning from available cues
+
+### Verdict
+
+Gemini 3.1 Flash Lite is strong at *content-driven* audio understanding (who is speaking, what they said, the emotional register, the environment) but limited in *signal-level* acoustic analysis (precise measurements, spectral characteristics). Quantitative outputs should be treated as informed estimates, not measurements. For a lightweight model variant, this is an impressive baseline — all 49 prompts completed without failures, with coherent and relevant outputs throughout.
+
+## Repository Contents
 
 ### Voice Sample
 
-- `2026-03-26/26_03_2026_16_08.flac` — Voice recording (~30MB, mono 24kHz FLAC, 20m 54s)
+- `2026-03-26/26_03_2026_16_08.flac` — Full recording (~30MB, mono 24kHz FLAC, 20m 54s)
 - `2026-03-26/short-sample.flac` — Shorter excerpt
 - `transcript.md` — Timestamped transcript (AssemblyAI, 97.4% confidence)
 
 ### Test Prompts (`test-prompts/`)
 
-Prompts designed to evaluate different aspects of audio analysis:
+49 implemented prompts across 13 categories:
 
-- `accent.txt` / `accent-expert.txt` — Accent identification and detailed analysis
-- `emotional-tone.txt` / `emotional-tone-timestamped.txt` — Emotional tone detection
-- `eq-recommendation.txt` — EQ and audio processing recommendations
-- `phonetic-analysis.txt` — Phonetic pattern analysis
-- `speech-patterns.txt` — Speech pattern characterisation
-- `tts-cloning-notes.txt` — TTS voice cloning evaluation notes
-- `voice-profile.txt` — Overall voice profiling
-- `wpm-analysis.txt` — Words-per-minute analysis
+| Category | Count | Examples |
+|----------|-------|---------|
+| Speaker Analysis | 8 | accent, phonetic-analysis, speech-patterns, hybrid-accent-analysis |
+| Audio Engineering | 6 | eq-recommendation, microphone-type-guess, room-acoustics-estimation |
+| Emotion & Sentiment | 5 | emotional-tone, valence-arousal-mapping, tone-of-voice-description |
+| Speaker Demographics | 4 | gender-determination, true-age-detection, education-level-estimation |
+| Health & Wellness | 4 | inebriation-detection, drug-influence-detection, hydration-assessment |
+| Environment | 4 | indoor-outdoor-classification, background-noise-classification |
+| Speech Metrics | 3 | wpm-analysis, dictation-coaching, speech-recognition-model-ranking |
+| Forensic Audio | 3 | deception-detection, deepfake-detection, insincerity-timestamps |
+| Voice Cloning | 2 | tts-cloning-notes, clonability-assessment |
+| Content Analysis | 2 | words-vs-tone-deviation, address-pattern-rating |
+| Language Learning | 2 | hebrew-phonetic-difficulty, easiest-foreign-language |
+| Production | 1 | voiceover-potential |
+| Speaker ID | 1 | celebrity-voice-match |
+
+Full index: `test-prompts/prompt-index.json`
 
 ### Outputs (`outputs/`)
 
-Example outputs generated by running the test prompts against the voice sample, for reference and comparison.
+Raw model outputs (markdown) for all 49 prompts, generated by `run-prompts.py`.
+
+### Report
+
+- `report.pdf` — Compiled PDF with cover page, experiment introduction, findings summary, table of contents, and all 49 prompt–output pairs
+- `generate-pdf.py` — Script to regenerate the PDF from current data
 
 ## Usage
 
-`run-prompts.py` can be used to batch-run the prompts against a supported model.
+```bash
+# Run all prompts against the model
+python run-prompts.py
+
+# Run a specific prompt
+python run-prompts.py --only accent
+
+# Regenerate the PDF report
+.venv/bin/python generate-pdf.py
+```
+
+## License
+
+Test prompts and outputs are provided for research and reference purposes.
